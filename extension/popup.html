@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MeetMind</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <p class="mark">MeetMind</p>
+      <h1>Find people worth meeting</h1>
+      <p class="lede">Start a search, then continue in the MeetMind app.</p>
+    </header>
+    <form>
+      <label for="goal">Networking goal</label>
+      <textarea
+        id="goal"
+        name="goal"
+        rows="5"
+        placeholder="I want to meet a product manager working on AI products."
+      ></textarea>
+      <p class="error" data-error hidden></p>
+      <button type="submit">Search in MeetMind</button>
+    </form>
+    <button type="button" class="text" data-open-app>Open the app</button>
+    <script src="dist/popup.js"></script>
+  </body>
+</html>

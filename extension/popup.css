@@ -1,0 +1,102 @@
+:root {
+  color-scheme: light;
+  --paper: #f3efe6;
+  --ink: #1c1915;
+  --muted: #625c54;
+  --line: #e3dcd0;
+  --accent: #0e6b57;
+  --danger: #8d2f2c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 16px 16px 14px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.45 "Segoe UI", sans-serif;
+}
+
+.mark {
+  margin: 0;
+  font-family: Georgia, "Iowan Old Style", serif;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.lede {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+form {
+  margin-top: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 96px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fffdf9;
+  color: inherit;
+  font: inherit;
+}
+
+textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b5444;
+}
+
+button.text {
+  margin-top: 6px;
+  background: transparent;
+  color: var(--accent);
+}
+
+button.text:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.error {
+  margin: 8px 0 0;
+  color: var(--danger);
+  font-size: 12px;
+}
