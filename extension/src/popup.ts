@@ -2,7 +2,7 @@
  * MeetMind web app origin.
  * Change this when you deploy. The extension never calls the API and has no API keys.
  */
-const WEB_APP_URL = "http://localhost:3000";
+const WEB_APP_URL = "http://localhost:3010";
 
 function openApp(query: string | null, autorun: boolean): void {
   const url = new URL(WEB_APP_URL);

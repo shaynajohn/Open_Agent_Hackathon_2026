@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 
 from app.config import get_settings
 from app.errors import AppError
-from app.routers import health, outreach, search
+from app.routers import health, integrations, outreach, search
 
 
 def create_app() -> FastAPI:
@@ -27,6 +27,7 @@ def create_app() -> FastAPI:
         return JSONResponse(status_code=exc.status_code, content={"detail": exc.message})
 
     app.include_router(health.router)
+    app.include_router(integrations.router)
     app.include_router(search.router, prefix="/api")
     app.include_router(outreach.router, prefix="/api")
     return app
